@@ -1,0 +1,27 @@
+<HTML><HEAD><TITLE>VOWEL COUNT SOP 3 SKILL SET 2</TITLE>
+<script language="javascript" type="text/javascript">
+function vowelcount()
+{
+var str=prompt("enter any string");//user input
+var l=str.length; // determine the length of your string
+var ctr=0,vc=0;
+var ch;
+for(ctr=0;ctr<l;ctr++) //end of string
+{
+ch=str.charAt(ctr);
+if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' ||
+ch=='O' || ch=='U')
+{
+vc++; //if vowel found increase the vc counter
+}
+}
+document.write("<h1 style=background-color:aqua><font color=blue>"+"The Number of
+Vowels in the string " + "<BR>" +str+ "<BR>"+" are : " + vc + "</h1>");
+}
+</script></head>
+<body bgcolor="yellow" text="blue">
+<form>
+<h1>VOWEL COUNT</h1>
+<input type="button" name="b1" value="VOWEL COUNT" onclick="vowelcount()">
+</form>
+</body></html>
