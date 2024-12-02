@@ -1,27 +1,25 @@
-<HTML><HEAD><TITLE>VOWEL COUNT SOP 3 SKILL SET 2</TITLE>
-<script language="javascript" type="text/javascript">
-function vowelcount()
+<html><head><title> Temp Change/ ftoc</title>
+<script>
+function ctof()
 {
-var str=prompt("enter any string");//user input
-var l=str.length; // determine the length of your string
-var ctr=0,vc=0;
-var ch;
-for(ctr=0;ctr<l;ctr++) //end of string
-{
-ch=str.charAt(ctr);
-if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' ||
-ch=='O' || ch=='U')
-{
-vc++; //if vowel found increase the vc counter
+var c,f;
+c=parseInt(prompt("Enter temp in degrees Celsius "));
+f=(((9/5)*c)+32);
+document.write("<h1>"+"The Temp in degrees Fahrenheit is " + f);
+document.write("</h1>");
 }
-}
-document.write("<h1 style=background-color:aqua><font color=blue>"+"The Number of
-Vowels in the string " + "<BR>" +str+ "<BR>"+" are : " + vc + "</h1>");
+function ftoc()
+{
+var c,f;
+f=parseInt(prompt("Enter temp in degrees Fahrenheit "));
+c=(f-32)/1.8; //calculation using the formula
+document.write("<h1>"+"The Temp in degrees Celsius is " + c);
+document.write("</h1>");
 }
 </script></head>
-<body bgcolor="yellow" text="blue">
+<body bgcolor="cyan" text="magenta">
+<h1>Temperature Conversion from CtoF and FtoC</h1>
 <form>
-<h1>VOWEL COUNT</h1>
-<input type="button" name="b1" value="VOWEL COUNT" onclick="vowelcount()">
-</form>
-</body></html>
+<input type="button" name="b1" value="C To F" onclick="ctof()">
+<input type="button" name="b2" value="F To C" onclick="ftoc()">
+</form></body></html>
